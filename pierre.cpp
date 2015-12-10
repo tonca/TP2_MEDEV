@@ -1,5 +1,5 @@
 #include "pierre.h"
-#include "group.h"
+//#include "group.h"
 
 pierre::pierre(bool couleur, int x, int y, group* group)
 {

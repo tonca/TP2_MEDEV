@@ -10,7 +10,7 @@ class pierre
    public:
       pierre(bool couleur, int x, int y, group* grp);
       virtual ~pierre();
-
+      pos position;
 
    protected:
       bool couleur;

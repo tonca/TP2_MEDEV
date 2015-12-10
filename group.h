@@ -7,13 +7,15 @@
 
 class pierre;
 
+struct pos {int x; int y; };
+
 class group
 {
    public:
       group(pierre* pierre);
       virtual ~group();
       int liberte();
-      void absorb(group* groupe);
+      void absorb(group* grp);
 
    protected:
       std::list<pierre*> listPierres;

@@ -1,6 +1,5 @@
 #include "group.h"
 
-
 #ifndef GOBAN_H
 #define GOBAN_H
 
@@ -11,7 +10,7 @@ class goban
    public:
       goban();
       virtual ~goban();
-      int identifier(pos); //renvoie 0 si vide, 1 si blanc, 2 si noir
+      int identifier(pos position); //renvoie 0 si vide, 1 si blanc, 2 si noir
 
    protected:
       list<pierre*> pierres;
