@@ -8,7 +8,7 @@ class group;
 class pierre
 {
    public:
-      pierre(bool couleur, int x, int y, group* grp);
+      pierre(bool couleur, int x, int y);
       virtual ~pierre();
       int getX();
       int getY();
