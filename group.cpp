@@ -29,18 +29,13 @@ void group::absorb(group* grp)
 
 int group::liberte()
 {
-   /*
-   On prend une pierre
-   On regarde à dans les 4 directions
-   Si même couleur, répéter l'algorythme sur la pierre suivante
-   Si couleur differente ou si hors du tableau, ne rien faire et s'arrêter.
-   Si vide, ajouter la position à la liste si elle n'y est pas déjà
-   */
-
    list<pos> lib;
-   for (int i=0; i<listPierres.size(); i++)
-   {
-    /* On veut compter les cases libres à l'exterieur du groupe*/
-   }
+
+    //Pour chaque pierre du groupe
+    //On regarde à dans les 4 directions
+    //Si même couleur, ne rien faire et passer à la suivante
+    //Si couleur differente ou si hors du tableau ou si à l'intérieur, ne rien faire et s'arrêter.
+    //Si vide, ajouter la position à la liste si elle n'y est pas déjà
+    //On renvoie la taille de la liste
    return 0;
 }
