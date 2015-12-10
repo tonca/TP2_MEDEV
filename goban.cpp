@@ -3,6 +3,7 @@
 goban::goban()
 {
    //ctor
+   taille =0;
 }
 
 goban::~goban()
@@ -33,8 +34,14 @@ bool goban::addPierre(pierre* Pierre)
    if(identifier(position)==0)
       {
          pierres.push_back(Pierre);
+         taille++;
          return true;
       }
    else return false;
 
+}
+
+int goban::getTaille()
+{
+   return taille;
 }
