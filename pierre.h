@@ -10,10 +10,12 @@ class pierre
    public:
       pierre(bool couleur, int x, int y, group* grp);
       virtual ~pierre();
-      pos position;
+      int getX();
+      int getY();
+      bool getCouleur();
 
    protected:
-      bool couleur;
+      bool couleur; //false si blanc et true si noir
       int x;
       int y;
       group* grp;

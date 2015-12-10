@@ -1,8 +1,8 @@
 #include "group.h"
 
+
 using namespace std;
 
-class pierre;
 
 group::group(pierre* Pierre)
 {

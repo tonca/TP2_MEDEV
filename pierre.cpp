@@ -15,3 +15,15 @@ pierre::~pierre()
    //dtor
 }
 
+int pierre::getX(){
+   return x;
+}
+
+int pierre::getY(){
+   return y;
+}
+
+bool pierre::getCouleur(){
+   return couleur;
+}
+

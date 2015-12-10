@@ -1,11 +1,11 @@
 #include <cstdlib>
 #include <iostream>
 #include <list>
+#include "pierre.h"
 
 #ifndef GROUP_H
 #define GROUP_H
 
-class pierre;
 
 struct pos {int x; int y; };
 

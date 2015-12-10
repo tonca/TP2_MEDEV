@@ -11,6 +11,7 @@ class goban
       goban();
       virtual ~goban();
       int identifier(pos position); //renvoie 0 si vide, 1 si blanc, 2 si noir
+      bool addPierre(pierre* Pierre);
 
    protected:
       list<pierre*> pierres;
