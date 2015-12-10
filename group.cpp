@@ -18,7 +18,7 @@ group::~group()
 void group::absorb(group* grp)
 {
    //absorber un autre groupe et en inclure les membres
-
+// commentaire inutile
 
 }
 
