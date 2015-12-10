@@ -18,11 +18,12 @@ group::~group()
 void group::absorb(group* grp)
 {
    //absorber un autre groupe et en inclure les membres
-    for ( group::iterator iter = grp.begin(); iter != grp.end(); iter++ ){
-        this->listPierres.push_back(grp.listPierres[iter]);
+    list<pierre*>::iterator iter;
+    for (iter = grp->listPierres.begin(); iter != grp->listPierres.end(); iter++ ){
+        this->listPierres.push_back(*iter);
     }
     //détruire l'autre groupe
-    grp.~group();
+    grp->~group();
 
 }
 
@@ -31,6 +32,7 @@ int group::liberte()
    list<pos> lib;
    for (int i=0; i<listPierres.size(); i++)
    {
-
+    /* On veut compter les cases libres à l'exterieur du groupe*/
    }
+   return 0;
 }
