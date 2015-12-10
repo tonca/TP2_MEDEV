@@ -18,7 +18,11 @@ group::~group()
 void group::absorb(group* grp)
 {
    //absorber un autre groupe et en inclure les membres
-// commentaire inutile
+    for ( group::iterator iter = grp.begin(); iter != grp.end(); iter++ ){
+        this->listPierres.push_back(grp.listPierres[iter]);
+    }
+    //détruire l'autre groupe
+    grp.~group();
 
 }
 
