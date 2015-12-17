@@ -1,3 +1,7 @@
+/* Classe Pierre
+
+*/
+
 #include "pierre.h"
 //#include "group.h"
 

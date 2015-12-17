@@ -1,3 +1,7 @@
+/* Classe Group
+
+*/
+
 #include "group.h"
 
 

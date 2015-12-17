@@ -1,3 +1,7 @@
+/* Header de la classe pierre
+
+*/
+
 //#include "group.h"
 
 class group;

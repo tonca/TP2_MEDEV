@@ -1,3 +1,7 @@
+/* Header de la classe Goban
+
+*/
+
 #include "group.h"
 
 #ifndef GOBAN_H

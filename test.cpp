@@ -1,3 +1,9 @@
+/* Fichier de lancement des tests
+
+le 17/12/2015
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <cstdlib>

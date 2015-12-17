@@ -1,3 +1,7 @@
+/* Header de la classe group
+
+*/
+
 #include <cstdlib>
 #include <iostream>
 #include <list>
@@ -17,9 +21,10 @@ class group
       int liberte();
       void absorb(group* grp);
 
-   protected:
+
       std::list<pierre*> listPierres;
 
+   protected:
    private:
 };
 

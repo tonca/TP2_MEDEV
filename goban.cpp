@@ -1,3 +1,7 @@
+/* Classe Goban
+
+*/
+
 #include "goban.h"
 
 goban::goban()
