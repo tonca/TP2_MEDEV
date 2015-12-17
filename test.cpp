@@ -48,6 +48,34 @@ TEST(pierre_constructor_test, white)
 
    EXPECT_EQ(false, caillou.getCouleur());
    EXPECT_EQ(0, caillou.getX());
-   EXPECT_EQ(4, caillou.getY());
+   EXPECT_EQ(5, caillou.getY());
 
 }
+
+TEST(goban_test, position)
+{
+   goban go;
+   pos position = {0,0};
+	pierre* caillou = new pierre(false,0,0);
+   bool toto=go.addPierre(caillou);
+   EXPECT_EQ(false, go.addPierre(caillou));
+
+   EXPECT_EQ(1, go.identifier(position));
+   //EXPECT_EQ(0, go.identifier(position);
+
+}
+
+TEST(grouptest, position)
+{
+
+	pierre* caillou1 = new pierre(false,0,0);
+   pierre* caillou2 = new pierre(false,0,1);
+	group grp1(caillou1);
+	group grp2(caillou2);
+	grp1.absorb(*grp2);
+
+   EXPECT_EQ(2, grp1.listPierres.size());
+
+
+}
+
