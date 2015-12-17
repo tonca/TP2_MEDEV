@@ -22,7 +22,10 @@ TEST(initialisation_test, goban_vide)
 
    int t = go.getTaille();
 
+	//SCOPED_TRACE(i << "x" << j);
 	EXPECT_EQ(0, t);
+
+
 
 }
 
